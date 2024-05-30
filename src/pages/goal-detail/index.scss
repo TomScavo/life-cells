@@ -1,0 +1,160 @@
+.goal-detail-wrapper {
+  height: 100vh;
+  padding: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .background-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.4);
+  }
+
+  .remark {
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #d0d0d0;
+  }
+
+  .consume-life {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #d0d0d0;
+  }
+
+  .goal-subtitle {
+    text-align: center;
+    font-size: 47rpx;
+    padding: 70rpx;
+    position: absolute;
+    top: 54%;
+    left: 0;
+  }
+
+  .cover-wrapper {
+    background: transparent;
+    position: relative;
+    height: calc(40vh + 40rpx);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+
+    .cover-image {
+      height: 40vh;
+    }
+
+    .image-filter {
+      // filter: blur(54px);
+    }
+
+    .executing-time-wrapper {
+      position: absolute;
+      display: flex;
+      padding: 0 100px;
+      align-items: center;
+      font-size: 4em;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      
+      // background: rgb(15 28 43 / 90%);
+    }
+
+    .play-button-wrapper {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .progress-bar-detail-wrapper {
+    margin: 40px 0 20px;
+  }
+
+  .options-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 80px;
+    // margin-top: 40px;
+    // & > view:nth-child(2) {
+    //   margin: 0 150px;
+    // }
+
+    // & > view:nth-child(3) {
+    //   margin: 0 150px;
+    // }
+
+    view {
+      padding: 40px;
+    }
+
+    image {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .button-container {
+    .button-wrapper {
+      position: relative;
+      font-weight: bold;
+      margin-top: 60px;
+
+      .button {
+        width: 180px;
+        height: 180px;
+        line-height: 180px;
+        font-size: 40px;
+        border-radius: 50%;
+      }
+
+      .start-button {
+        width: 180px;
+        height: 180px;
+        line-height: 180px;
+        font-size: 40px;
+        background: #4096ff;
+        color: #fff;
+        border-radius: 50%;
+      }
+
+      .pause-button {
+        background: #eaeaea;
+        color: #315f83;
+      }
+
+      .continue-button {
+        background: #038c61;
+        margin-right: 40px;
+
+        image {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      .finish-button {
+        background: #b55050;
+
+        image {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

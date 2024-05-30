@@ -1,0 +1,74 @@
+.goal-logs-wrapper {
+  .title-wrapper {
+    padding: 40px;
+    padding-bottom: 0;
+  }
+
+  .goals-wrapper {
+    padding: 0 40px;
+    height: calc(100vh - 200px);
+    overflow: auto;
+    padding-top: 30px;
+  
+    .goal-item {
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+      border-radius: 17px;
+    
+      .thumbnail-wrapper {
+        display: flex;
+        height: 100%;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .thumbnail {
+        height: 100%;
+      }
+  
+      .goal-item-container {
+        overflow: hidden;
+        margin-left: 30px;
+        flex: 1;
+      }
+    
+      .goal-item-wrapper {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    
+        .goal {
+          font-weight: bold;
+        }
+    
+        .task {
+          color: #adadad
+        }
+
+        .delete-wrapper {
+          width: 100%;
+        }
+
+        .delete-icon {
+          width: 30px;
+          height: 30px;
+        }
+    
+        .progress-bar {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

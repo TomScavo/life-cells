@@ -1,0 +1,44 @@
+
+.music-list-wrapper {
+  max-height: calc(100vh - env(safe-area-inset-bottom) - 370rpx);
+  overflow: auto;
+  padding: 0 40px;
+
+  .music-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    height: 200px;
+
+    .thumbnail-wrapper {
+      display: flex;
+      height: 100%;
+      width: 100px;
+      justify-content: center;
+      align-items: center;
+
+      image {
+        height: 100%;
+        width: 100px;
+        border-radius: 10px;
+      }
+    }
+
+    .music-info {
+      flex: 1;
+      padding-left: 20px;
+      width: calc(100% - 100rpx);
+    }
+
+    .music-duration {
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+  }
+
+  .music-item:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}

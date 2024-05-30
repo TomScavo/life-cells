@@ -1,0 +1,16 @@
+.empty-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    text {
+      padding: 30px;
+    }
+  
+    image {
+      width: 400px;
+      margin-left: -16px;
+      margin-top: 120px;
+    }
+  }

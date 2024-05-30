@@ -1,0 +1,28 @@
+.timer-cover-container {
+    .timer-cover-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(#69b6ec, #6762c7);
+        transform: scale(0);
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        transition: all 1s;
+        margin-left: 50%;
+        transform: translate(-50%, 0) scale(0);
+    }
+    .timer-cover-show {
+        transform: translate(-50%, 0) scale(20);
+    }
+
+    .timer {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        font-size: 200px;
+    }
+}
+

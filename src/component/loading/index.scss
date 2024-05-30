@@ -1,0 +1,15 @@
+// @import "~taro-ui/dist/style/components/icon.scss";
+
+.loading-icon {
+    animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,108 @@
+$height: 10px;
+$radius: 12px;
+
+.anime-wrapper > view {
+    bottom: 20px;
+    position: absolute;
+}
+
+.anime-wrapper image {
+    width: 120px;
+}
+
+
+
+.anime-wrapper {
+    .hero {
+        width: 150px;
+        height: calc(150rpx / (930 / 410));
+    }
+
+    .level-up {
+        height: calc(120rpx / (300 / 78));
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .level {
+        text-align: center;
+    }
+
+    .princess {
+        width: 135px;
+    }
+}
+
+.anime-wrapper > view:nth-child(2) {
+    left: 23%;
+}
+
+.anime-wrapper >  view:nth-child(3) {
+    left: 48%;
+}
+
+.anime-wrapper > view:nth-child(4) {
+    left: 73%;
+}
+
+.anime-wrapper  > view:nth-child(5) {
+    left: 100%;
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .progress-bar-container {
+        position: relative;
+        flex: 1;
+        height: $height;
+        background: #cce5ff;
+        border-radius: $radius;
+
+        .progress-bar {
+            height: 100%;
+            background: #0899e2;
+            border-radius: $radius;
+        }
+
+        .finished {
+            background: #0b9c0b;
+        }
+
+        .dot-wrapper {
+            position: absolute;
+            left: 0;
+            top: -15px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            border-radius: 50%;
+
+
+            .dot {
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background-color: #fff;
+                transition: all 0.2 linear;
+            }
+
+            .dot:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 21px;
+        margin-left: 10px;
+        width: 125px;
+        text-align: end;
+    }
+}
+

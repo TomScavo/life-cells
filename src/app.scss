@@ -1,0 +1,46 @@
+page {
+    box-sizing: border-box;
+    color: #fff;
+    background: linear-gradient(#315f83, #101461);
+    background-attachment: fixed;
+    padding-bottom: calc(110px + env(safe-area-inset-bottom));
+}
+
+view,text,image{
+    box-sizing: border-box;
+}
+
+.bold {
+ font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-ellipsis {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}

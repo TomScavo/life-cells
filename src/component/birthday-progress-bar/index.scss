@@ -1,0 +1,30 @@
+$height: 10px;
+$radius: 12px;
+
+.birthday-progress-bar-wrapper {
+    display: flex;
+    align-items: center;
+
+    .progress-bar-container {
+        flex: 1;
+        height: $height;
+        background: #cce5ff;
+        border-radius: $radius;
+
+        .progress-bar {
+            height: $height;
+            background: #0899e2;
+            border-radius: $radius;
+        }
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 21px;
+        padding-left: 40px;
+        width: 160px;
+        text-align: end;
+    }
+}

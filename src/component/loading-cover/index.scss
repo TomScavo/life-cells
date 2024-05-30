@@ -1,0 +1,13 @@
+.loading-cover {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#69b6ec, #6762c7);
+  font-size: 40px;
+}

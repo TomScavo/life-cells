@@ -1,0 +1,99 @@
+.empty-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text {
+    padding: 30px;
+  }
+
+  image {
+    width: 400px;
+    margin-left: -16px;
+    margin-top: 120px;
+  }
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px dashed #cccccc;
+  color: #fff;
+  margin-bottom: 30px;
+
+  image {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+  }
+}
+
+.goals-container {
+  padding-bottom: calc(110px + env(safe-area-inset-bottom));
+
+  .sub-title-wrapper {
+    padding: 0 40px;
+  }
+}
+
+.goals-wrapper {
+  padding: 0 40px;
+  height: calc(100vh - env(safe-area-inset-bottom) - 380rpx);
+  width: 100%;
+  overflow: auto;
+
+  .goal-item {
+    box-sizing: border-box;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    border-radius: 17px;
+  
+    .thumbnail-wrapper {
+      display: flex;
+      height: 100%;
+      width: 140px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .thumbnail {
+      height: 100%;
+    }
+
+    .goal-item-container {
+      overflow: hidden;
+      margin-left: 30px;
+      flex: 1;
+    }
+  
+    .goal-item-wrapper {
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+  
+      .goal {
+        font-weight: bold;
+      }
+  
+      .task {
+        color: #adadad
+      }
+  
+      .progress-bar {
+        width: 100%;
+      }
+    }
+  }
+}
