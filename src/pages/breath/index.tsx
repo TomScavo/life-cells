@@ -49,7 +49,7 @@ const Breath = () => {
     }, duration || 5000);
   }
 
-  function handlePlay(e) {
+  function handlePlay(e: any) {
     if (fade) return;
 
     const videoContext = Taro.createVideoContext('breath');

@@ -213,6 +213,7 @@ const GoalDetail = () => {
           ></View>
         )
       }
+
       <Title showGoBack onGoBack={() => onGoBack(isExecuting, stopCurrentAudio, executingTimer)}>{goal}</Title>
       {
         encourageConfig.isShowBackgroundImage && (
@@ -246,7 +247,6 @@ const GoalDetail = () => {
               executingGoalRef,
             })
           }
-          // textStyle={{ width: 'auto' }}
         ></ProgressBar>
       </View>
 
@@ -258,6 +258,7 @@ const GoalDetail = () => {
           isPlayingRef={isPlayingRef}
           audioRef={audioRef}
       />
+
       <View className="button-container flex-center">
         <View className="button-wrapper flex-between">
           <Music></Music>
